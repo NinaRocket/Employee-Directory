@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Andrew Morrow",
+        "occupation": "Marketing Executive",
+        "phone": "533-654-9987",
+        "email": "amorrow@pancake.com"
+    },
+    {
+        "id": 2,
+        "name": "Ann Steffler",
+        "occupation": "Biologist",
+        "phone": "921-655-9182",
+        "email": "asteffler@pancake.com"
+    },
+    {
+        "id": 3,
+        "name": "Curtis Rogers",
+        "occupation": "Receptionist",
+        "phone": "533-654-9942",
+        "email": "crogers@pancake.com"
+    },
+    {
+        "id": 4,
+        "name": "James Gitumbi",
+        "occupation": "Accountant",
+        "phone": "533-654-9999",
+        "email": "jgitumbi@pancake.com"
+    },
+    {
+        "id": 5,
+        "name": "Tisha Nair",
+        "occupation": "Artistry Director",
+        "phone": "533-654-9777",
+        "email": "tnair@pancake.com"
+    },
+    {
+        "id": 6,
+        "name": "Jacob Cravey",
+        "occupation": "Maintenance",
+        "phone": "533-654-9977",
+        "email": "jcravey@pancake.com"
+    },
+    {
+        "id": 7,
+        "name": "Gedalya Krycer",
+        "occupation": "Design, VP",
+        "phone": "533-654-9001",
+        "email": "gkrycer@pancake.com"
+    },
+    {
+        "id": 8,
+        "name": "Linnea Gear",
+        "occupation": "Director of Operations",
+        "phone": "533-654-9555",
+        "email": "lgear@pancake.com"
+    },
+    {
+        "id": 9,
+        "name": "Scott Harris",
+        "occupation": "Human Resource Manager",
+        "phone": "533-654-9011",
+        "email": "sharris@pancake.com"
+    },
+    {
+        "id": 10,
+        "name": "Cesar Gomez",
+        "occupation": "Quality Assurance",
+        "phone": "533-654-0097",
+        "email": "cgomez@pancake.com"
+    },
+    {
+        "id": 11,
+        "name": "Nina Rocket",
+        "occupation": "Pancake Tester",
+        "phone": "533-654-1181",
+        "email": "nrocket@pancake.com"
+    },
+    {
+        "id": 12,
+        "name": "Emily Gallina",
+        "occupation": "Public Relations Representative",
+        "phone": "533-654-0667",
+        "email": "egallina@pancake.com"
+    }
+]
