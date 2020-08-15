@@ -22,9 +22,9 @@ function EmployeeList(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.sortEmployee(props.id)} className="sort">
+      {/* <span onClick={() => props.sortEmployee(props.id)} className="sort">
         Sort by Name
-      </span>
+      </span> */}
     </div>
     
   );

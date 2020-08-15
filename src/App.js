@@ -10,7 +10,7 @@ class App extends Component {
     employee
   };
 
-  sortEmployee= name => {
+  sortEmployee= sort => {
     // Filter this.state.employees so they sort in alphabetical order
     const employees = this.state.employees.sort(employee.name);
     // Set this.state.employees equal to the new employees array
@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Employee Directory</Title>
-        {this.state.employees.map(employee => (
+        {this.state.employee.map(employee => (
           <EmployeeList
             sortEmployee={this.sortEmployee}
             id={employee.id}
