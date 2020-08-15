@@ -46,10 +46,10 @@ export default EmployeeList;
      
 //       <div className="content">
 //         <ul class="list-group list-group-horizontal-lg">
-//           <li class="list-group-item">  Name: </li> {props.name}
-//           <li class="list-group-item"> Occupation: </li> {props.occupation}
-//           <li class="list-group-item"> Phone: </li> {props.phone}
-//           <li class="list-group-item"> Email: </li> {props.email}
+//           <li class="list-group-item">  Name: {props.name}</li> 
+//           <li class="list-group-item"> Occupation: {props.occupation}</li> 
+//           <li class="list-group-item"> Phone: {props.phone}</li> 
+//           <li class="list-group-item"> Email: {props.email}</li> 
 //         </ul>
 //       </div>
 //       </div>

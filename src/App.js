@@ -3,6 +3,7 @@ import EmployeeList from "./components/EmployeeList";
 import Wrapper from "./components/Wrapper";
 //import Title from "./components/Title";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -11,9 +12,9 @@ class App extends Component {
     employees
   };
 
-  sortEmployee= name => {
+  sortEmployee = name => {
     // Filter this.state.employees so they sort in alphabetical order
-    const employees = this.state.employees.sort(employees.name);
+    const employees = this.state.employees.sort(name => employees.name > employees.name);
     // Set this.state.employees equal to the new employees array
     this.setState({ employees });
     console.log(employees); 
@@ -25,8 +26,9 @@ class App extends Component {
      <>
       <Hero backgroundImage="https://images.unsplash.com/photo-1573405618423-1e1a86fbe807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
           <h1>Pancakes</h1>
-          <h2>Employee Directory</h2>
+          <h2>America's Favorite Pancakes</h2>
       </Hero>
+      <Navbar></Navbar>
      <Wrapper>
         {this.state.employees.map(employees => (
           <EmployeeList
