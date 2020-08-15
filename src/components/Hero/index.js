@@ -5,8 +5,12 @@ function Hero(props) {
   return (
     <div className="hero text-center" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
       {props.children}
+      <span onClick={() => props.sortEmployee(props.name)} className="sort">
+        Sort by Name
+      </span>
     </div>
   );
 }
 
 export default Hero;
+

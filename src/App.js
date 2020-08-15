@@ -16,16 +16,18 @@ class App extends Component {
     const employees = this.state.employees.sort(employees.name);
     // Set this.state.employees equal to the new employees array
     this.setState({ employees });
+    console.log(employees); 
   };
 
   // Map over this.state.employees and render an employee list item
   render() {
     return (
-      <Wrapper>
-         <Hero backgroundImage="https://images.unsplash.com/photo-1573405618423-1e1a86fbe807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+     <>
+      <Hero backgroundImage="https://images.unsplash.com/photo-1573405618423-1e1a86fbe807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
           <h1>Pancakes</h1>
           <h2>Employee Directory</h2>
       </Hero>
+     <Wrapper>
         {this.state.employees.map(employees => (
           <EmployeeList
             sortEmployee={this.sortEmployee}
@@ -36,8 +38,11 @@ class App extends Component {
             phone={employees.phone}
             email={employees.email}
           />
+       
         ))}
+
       </Wrapper>
+      </>
     );
   }
 }

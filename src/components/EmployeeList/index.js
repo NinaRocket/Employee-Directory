@@ -36,10 +36,23 @@ function EmployeeList(props) {
 export default EmployeeList;
 
 
+// import React from "react";
+// import "./style.css";
+// //import Hero from "../Hero";
 
-// <ul class="list-group list-group-horizontal-lg">
-//   <li class="list-group-item">Cras justo odio</li>
-//   <li class="list-group-item">Dapibus ac facilisis in</li>
-//   <li class="list-group-item">Morbi leo risus</li>
-//   <li class="list-group-item">Morbi leo risus</li>
-// </ul>
+// function EmployeeList(props) {
+//   return (
+//     <div className="list-group list-group-horizontal-lg">
+     
+//       <div className="content">
+//         <ul class="list-group list-group-horizontal-lg">
+//           <li class="list-group-item">  Name: </li> {props.name}
+//           <li class="list-group-item"> Occupation: </li> {props.occupation}
+//           <li class="list-group-item"> Phone: </li> {props.phone}
+//           <li class="list-group-item"> Email: </li> {props.email}
+//         </ul>
+//       </div>
+//       </div>
+//   )};
+
+// export default EmployeeList;
