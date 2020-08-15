@@ -1,11 +1,16 @@
 import React from "react";
 import "./style.css";
+//import Hero from "../Hero";
 
 function EmployeeList(props) {
   return (
     <div className="list-group list-group-horizontal-lg">
+     
       <div className="img-container">
       </div>
+      {/* <span onClick={() => props.sortEmployee(props.name)} className="sort">
+        Sort by Name
+      </span>  */}
       <div className="content">
         <ul>
           <li>
@@ -22,9 +27,7 @@ function EmployeeList(props) {
           </li>
         </ul>
       </div>
-      {/* <span onClick={() => props.sortEmployee(props.id)} className="sort">
-        Sort by Name
-      </span> */}
+
     </div>
     
   );

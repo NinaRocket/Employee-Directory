@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import EmployeeList from "./components/EmployeeList";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import employee from "./employee.json";
+//import Title from "./components/Title";
+import Hero from "./components/Hero";
+import employees from "./employees.json";
 
 class App extends Component {
   // Setting this.state.employee to the employees json array
   state = {
-    employee
+    employees
   };
 
-  sortEmployee= sort => {
+  sortEmployee= name => {
     // Filter this.state.employees so they sort in alphabetical order
-    const employees = this.state.employees.sort(employee.name);
+    const employees = this.state.employees.sort(employees.name);
     // Set this.state.employees equal to the new employees array
     this.setState({ employees });
   };
@@ -21,16 +22,19 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Employee Directory</Title>
-        {this.state.employee.map(employee => (
+         <Hero backgroundImage="https://images.unsplash.com/photo-1573405618423-1e1a86fbe807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+          <h1>Pancakes</h1>
+          <h2>Employee Directory</h2>
+      </Hero>
+        {this.state.employees.map(employees => (
           <EmployeeList
             sortEmployee={this.sortEmployee}
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            occupation={employee.occupation}
-            phone={employee.phone}
-            email={employee.email}
+            id={employees.id}
+            key={employees.id}
+            name={employees.name}
+            occupation={employees.occupation}
+            phone={employees.phone}
+            email={employees.email}
           />
         ))}
       </Wrapper>
