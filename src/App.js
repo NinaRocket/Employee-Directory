@@ -12,12 +12,23 @@ class App extends Component {
     employees
   };
 
-  sortEmployee = name => {
+  // sortEmployee = name => {
+  //   // Filter this.state.employees so they sort in alphabetical order
+  //   const employees = this.state.employees.sort(name => employees.name > employees.name);
+  //   // Set this.state.employees equal to the new employees array
+  //   this.setState({ employees });
+  //   console.log(employees); 
+  // };
+  sortEmployee = () => {
     // Filter this.state.employees so they sort in alphabetical order
-    const employees = this.state.employees.sort(name => employees.name > employees.name);
+    // const employees = this.state.employees.sort(employees.name);
+    const employees = this.state.employees.sort((a, b) =>
+      a.name > b.name ? 1 : -1
+    );
     // Set this.state.employees equal to the new employees array
-    this.setState({ employees });
-    console.log(employees); 
+     this.setState({ employees });
+    // console.log(employees);
+    console.log(employees);
   };
 
   // Map over this.state.employees and render an employee list item
@@ -28,11 +39,11 @@ class App extends Component {
           <h1>Pancakes</h1>
           <h2>America's Favorite Pancakes</h2>
       </Hero>
-      <Navbar></Navbar>
+      <Navbar sortEmployee={this.sortEmployee}/>
      <Wrapper>
         {this.state.employees.map(employees => (
           <EmployeeList
-            sortEmployee={this.sortEmployee}
+            
             id={employees.id}
             key={employees.id}
             name={employees.name}
