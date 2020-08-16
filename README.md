@@ -18,4 +18,4 @@ This is a front end web application that uses React components. HTML, CSS, JS, a
 
 [Github Repo](https://github.com/NinaRocket/Employee-Directory)
 
-[Deployed Application Link]()
+[Deployed Application Link](https://reactemployeedirectory.netlify.app/)
