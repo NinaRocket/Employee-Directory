@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 //import Title from "./components/Title";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Search from "./components/Search";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -25,6 +26,15 @@ class App extends Component {
     console.log(employees);
   };
 
+
+  filterOccupation = event => {
+    
+    const employees = this.state.employees.filter(employees => employees.occupation.toLowerCase().includes(event.target.value.toLowerCase()));
+    
+    // Set this.state.employees equal to the new employees array
+    this.setState({ employees });
+  };
+
   // Map over this.state.employees and render an employee list item
   render() {
     return (
@@ -33,7 +43,9 @@ class App extends Component {
           <h1>Pancake</h1>
           <h2>America's Favorite Pancakes</h2>
       </Hero>
-      <Navbar sortEmployee={this.sortEmployee}/>
+      <Navbar sortEmployee={this.sortEmployee}
+      />
+      <Search filterOccupation={this.filterOccupation}/>
      <Wrapper>
         {this.state.employees.map(employees => (
           <EmployeeList
